@@ -2,270 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem-Pokemon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./imagens/favicon-32x32.png" />
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/scroll.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="./src/css/reset.css" />
+	<link rel="stylesheet" href="./src/css/scroll.css" />
+	<link rel="stylesheet" href="./src/css/style.css" />
+	<link rel="stylesheet" href="src/CSS/responsive.css">
+
+	<title>Projeto Mini Portfólio</title>
 </head>
 
 <body>
-    <header>
-        <a href="#">
-            <img src="./src/imagens/pokeball.png" alt="pokebola" class="logo">
-        </a>
-        <button id="botao-alterar-tema">
-            <img src="./src/imagens/sun.png" alt="imagem do sol" class="imagem-botao">
-        </button>
-    </header>
-    <main>
-        <ul class="listagem-pokemon">
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Bulbasur</span>
-                    <span>#001</span>
-                </div>
+	<main class="cartao">
+		<div class="minhas-informacoes">
+			<img src="./src/imagens/foto-perfil.jpg" alt="foto de perfil" />
+			<h1 class="nome">Paulo Novais Fuji</h1>
+			<h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
+		</div>
 
-                <img src="./src/imagens/bulbasaur.gif" alt="Bulbasaur" class="gif">
+		<div class="conteudo">
+			<ul class="abas">
+				<li class="aba selecionado" id="sobre-mim">
+					<img src="./src/imagens/sobre.gif" alt="ícone de sobre mim" />
+				</li>
 
-                <ul class="tipos">
-                    <li class="tipo grama">Grama</li>
-                    <li class="tipo veneno">Veneno</li>
-                </ul>
+				<li class="aba" id="minhas-redes">
+					<img src="./src/imagens/coracao.gif" alt="ícone de redes sociais" />
+				</li>
+			</ul>
 
-                <p class="descricao">Há uma semente de planta em suas costas desde o dia em que este Pokémon nasceu. A semente cresce lentamente.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Ivysaur</span>
-                    <span>#002</span>
-                </div>
-
-                <img src="./src/imagens/ivysaur.gif" alt="Ivysaur" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo grama">Grama</li>
-                    <li class="tipo veneno">Veneno</li>
-                </ul>
-
-                <p class="descricao">Quando o bulbo nas costas cresce, parece perder a capacidade de ficar de pé nas patas traseiras.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Venuasur</span>
-                    <span>#003</span>
-                </div>
-
-                <img src="./src/imagens/venusaur.gif" alt="Venusaur" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo grama">Grama</li>
-                    <li class="tipo veneno">Veneno</li>
-                </ul>
-
-                <p class="descricao">Sua planta floresce quando está absorvendo energia solar. Ele permanece em movimento para buscar a luz do sol.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Carmander</span>
-                    <span>#004</span>
-                </div>
-
-                <img src="./src/imagens/charmander.gif" alt="Charmander" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo fogo">Fogo</li>
-                </ul>
-
-                <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta de sua cauda.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Charmeleon</span>
-                    <span>#005</span>
-                </div>
-
-                <img src="./src/imagens/charmeleon.gif" alt="Charmeleon" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo fogo">Fogo</li>
-                </ul>
-
-                <p class="descricao">Tem uma natureza bárbara. Na batalha, ele chicoteia sua cauda ardente e corta com garras afiadas.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Charizard</span>
-                    <span>#006</span>
-                </div>
-
-                <img src="./src/imagens/charizard.gif" alt="Charizard" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo fogo">Fogo</li>
-                    <li class="tipo voador">Voador</li>
-                </ul>
-
-                <p class="descricao">Ele cospe fogo que é quente o suficiente para derreter pedregulhos. Pode causar incêndios florestais soprando chamas.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Squirtle</span>
-                    <span>#007</span>
-                </div>
-
-                <img src="./src/imagens/squirtle.gif" alt="Squirtle" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo agua">Agua</li>
-                </ul>
-
-                <p class="descricao">Quando ele retrai seu longo pescoço em sua concha, ele esguicha água com força vigorosa.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Wartortle</span>
-                    <span>#001</span>
-                </div>
-
-                <img src="./src/imagens/wartortle.gif" alt="Wartortle" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo agua">Agua</li>
-                </ul>
-
-                <p class="descricao">É reconhecido como um símbolo de longevidade. Se sua concha tem algas, esse Wartortle é muito antigo.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Blastoise</span>
-                    <span>#009</span>
-                </div>
-
-                <img src="./src/imagens/blastoise.gif" alt="Blastoise" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo agua">Agua</li>
-                </ul>
-
-                <p class="descricao">Ele esmaga seu inimigo sob seu corpo pesado para causar desmaios. Em uma pitada, ele se retirará dentro de sua concha.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Pikachu</span>
-                    <span>#025</span>
-                </div>
-
-                <img src="./src/imagens/pikachu.gif" alt="Pikachu" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo eletrico">Eletrico</li>
-                </ul>
-
-                <p class="descricao">Quando está com raiva, descarrega imediatamente a energia armazenada nas bolsas de suas bochechas.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Raichu</span>
-                    <span>#026</span>
-                </div>
-
-                <img src="./src/imagens/raichu.gif" alt="Raichu" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo eletrico">Eletrico</li>
-                </ul>
-
-                <p class="descricao">Sua cauda descarrega eletricidade no chão, protegendo-o de choques.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes"> <span>Ditto</span>
-                    <span>#026</span>
-                </div>
-
-                <img src="./src/imagens/ditto.gif" alt="Ditto" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo normal">Normal</li>
-                </ul>
-
-                <p class="descricao">Sua capacidade de transformação é perfeita. No entanto, se for feito para rir, não consegue manter seu disfarce.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Mewtwo</span>
-                    <span>#150</span>
-                </div>
-
-                <img src="./src/imagens/mewtwo.gif" alt="mewtwo" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo psiquico">Psiquico</li>
-                </ul>
-
-                <p class="descricao">Seu DNA é quase o mesmo de Mew. No entanto, seu tamanho e disposição são muito diferentes.</p>
-            </li>
-
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Mew</span>
-                    <span>#151</span>
-                </div>
-
-                <img src="./src/imagens/mew.gif" alt="Mew" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo psiquico">Psiquico</li>
-                </ul>
-
-                <p class="descricao">Quando visto através de um microscópio, o cabelo curto, fino e delicado deste Pokémon pode ser visto.</p>
-            </li>
-            <li class="cartao-pokemon">
-                <div class="informacoes">
-                    <span>Rayquaza</span>
-                    <span>#381</span>
-                </div>
-
-                <img src="./src/imagens/rayquaza.gif" alt="Rayquaza" class="gif">
-
-                <ul class="tipos">
-                    <li class="tipo dragao">Dragão</li>
-                    <li class="tipo voador">Voador</li>
-                </ul>
-
-                <p class="descricao">Diz-se que Rayquaza viveu durante centenas de milhões de anos. Ainda existem lendas sobre como ele pôs fim ao confronto entre Kyogre e Groudon.</p>
-            </li>
-            <aside class="menu-lateral">
-                <ul>
-                    <li>
-                        <a href="http://linkedin.com/in/paulofuji" target="_blank"><img src="./src/imagens/linkedin-in.svg" alt="icone LinkedIn" class="icone"></a>
-                    </li>
-                    <li>
-                        <a href="http://github.com/FujitoDev" target="_blank"><img src="./src/imagens/github.svg" alt="icone GitHub" class="icone"></a>
-                    </li>
-                </ul>
-            </aside>
-    </main>
-    <script src="./src/js/index.js"></script>
+			<div class="informacoes-abas">
+				<div class="informacao selecionado" id="informacao-sobre-mim">
+					<h3 class="sub-titulo">Sobre</h3>
+					<div class="descricao">
+						<p>Oi! meu nome é Paulo Novais Fuji, seja Bem Vindo(a)!</p>
+						<p>‎ </p>
+						<p>Me tornei uma pessoa apaixonada pela programação depois que me encontrei dentro da T.I. Nunca havia trabalhado na área. Através de amigos que estudavam programação, acabei conhecendo a programação. Decidi me tornar um <span>Dev de Frontend</span>.</p>
+						<p>‎ </p>
+						<p> Gosto muito de jogar videogames, assistir animes e séries e, mais... <span>PROGRAMAR!</span>
+						</p>
+					</div>
+				</div>
+				<div class="informacao" id="informacao-minhas-redes">
+					<h3 class="sub-titulo">Minhas Redes</h3>
+					<ul class="redes-sociais">
+						<li>
+							<a href="https://drive.google.com/file/d/1bmGob_tZlmxctHeybEuY7UBbteTwxFgK/view?usp=sharing" target="_blank" class="curriculo">Curriculo</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/paulofuji/" target="_blank" class="linkedin">Linkedin</a>
+						</li>
+						<li>
+							<a href="https://github.com/FujitoDev" target="_blank" class="github">GitHub</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="./src/js/index.js"></script>
 </body>
 
 </html>
